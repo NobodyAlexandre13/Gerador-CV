@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.form{
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 0 3px #949494;
+    margin: 15px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form h1{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h4{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #949494;
+}
+.inicio{
+    width: 100%;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.input label{
+    font-size: 18px;
+    color: #2e2e2e;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.input label span{
+    font-size: 12px;
+    color: #363636;
+    margin-bottom: 600;
+    text-transform: uppercase;
+}
+.input input, textarea{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: #cccccc;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+textarea{
+    height: 150px;
+    overflow: hidden;
+    resize: none;
+}
+.flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+.btn-gerar{
+    padding: 15px 10px;
+    background-color: #2d599b;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight:  600;
+    font-size: 18px;
+    border-radius: 15px;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.cv{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60.6%;
+    margin: 4%;
+}
+.meu-cv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 100%;
+}
+.left{
+    padding: 20px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #292929;
+    font-size: 16px;
+}
+.left h1{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+.left p{
+    margin-left: 8px;
+    max-width: 100%;
+}
+.right{
+    height: 100%;
+    padding: 20px 15px;
+}
+.right .nome{
+    font-size: 35px;
+    font-weight: 600;
+}
+.right .cargo{
+    font-size: 18px;
+    font-weight: 600;
+}
+.right .local{
+    color: #5a5a5a;
+    font-weight: 600;
+}
+.right h1{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+.right .borda{
+    border-bottom: 2px solid #2d599b;
+    width: 20%;
+    padding: 10px;
+}
+.btn-baixar{
+    background-color: #2d599b;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 4%;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    width: 60%;
+    height: 40px;
+}
+@media screen and (max-width: 1096px) {
+    .cv{
+        width: 100%;
+    }
+}

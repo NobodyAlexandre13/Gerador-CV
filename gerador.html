@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <title>Gerador de CV</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Dados do CV</h1>
+            <form action="">
+                <div class="inicio">
+                    <h4>Dados iniciais</h4>
+                    <div class="flex">
+                        <div class="input">
+                            <label for="">Nome <span>(PRIMEIRO E ULTIMO)</span></label>
+                            <input type="text" class="nomeInput" placeholder="Digite o teu nome">
+                        </div>
+                        <div class="input">
+                            <label for="">Sua Localização</label>
+                            <input type="text" class="localInput" name="" id="" placeholder="O tua localização">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="">Seu cargo <span>(o cargo em que estás a concorrer)</span></label>
+                        <input type="text" class="cargoInput" name="" id="" placeholder="Digite o seu cargo">
+                    </div>
+                </div>
+                <div class="sobre">
+                    <h4>Sobre você</h4>
+                    <div class="input">
+                        <label for="">Sobre você</label>
+                        <textarea class="sobreInput" placeholder="Fala sobre ti"></textarea>
+                    </div>
+                </div>
+                <div class="experiencia">
+                    <h4>Experiencias</h4>
+                    <div class="flex">
+                        <div class="input">
+                            <label for="">Nome da empresa</label>
+                            <input type="text" class="empresaInput" placeholder="Nome da empresa">
+                        </div>
+                        <div class="input">
+                            <label for="">Cargo</label>
+                            <input type="text" class="cargoEInput" placeholder="Cargo que tiveste na empresa">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="educacoa">
+                    <h4>Formação Academica</h4>
+                    <div class="flex">
+                        <div class="input">
+                            <label for="">Nome da instituição</label>
+                            <input type="text" class="InstiInput" placeholder="Nome da instituição">
+                        </div>
+                        <div class="input">
+                            <label for="">Data</label>
+                            <input type="text" class="dataInput" placeholder="Data de inicio">                            
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="">Sobre a formação</label>
+                        <textarea class="sfInput" placeholder="Descrição"></textarea>
+                    </div>
+                </div>
+
+                <div class="competecias">
+                    <h4>Principais competecias</h4>
+                    <div class="grid">
+                        <div class="input">
+                            <label for="">Competecia 1</label>
+                            <input type="text" class="c1Input" placeholder="exemplo: Marketing Digital">
+                        </div>
+                        <div class="input">
+                            <label for="">Competecia 2</label>
+                            <input type="text" class="c2Input" placeholder="exemplo: Marketing Digital">
+                        </div>
+                        <div class="input">
+                            <label for="">Competecia 3</label>
+                            <input type="text" class="c3Input" placeholder="exemplo: Marketing Digital">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contato">
+                    <h4>Contacto</h4>
+                    <div class="grid">
+                        <div class="input">
+                            <label for="">Email</label>
+                            <input type="text" class="emailInput" placeholder="exemplo@gmail.com">
+                        </div>
+                        <div class="input">
+                            <label for="">Telefone</label>
+                            <input type="text" class="telInput" placeholder="Digite o telefone">
+                        </div>
+                        <div class="input">
+                            <label for="">Linkedin</label>
+                            <input type="text" class="linkInput" placeholder="Digite o Linkedin">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-gerar">Gerar CV</button>
+            </form>
+        </div>
+        <div class="cv">
+            <div class="meu-cv">
+                <div class="left">
+                    <div class="contatctos">
+                        <h1>Contacto</h1>
+                        <p class="email"></p>
+                        <p class="numero"></p>
+                        <p class="link"></p>
+                    </div>
+                    <div class="competencias">
+                        <h1>Principais competencias</h1>
+                        <p class="comp1"></p>
+                        <p class="comp2"></p>
+                        <p class="comp3"></p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="dados-inicio">
+                        <div class="nome"></div>
+                        <div class="cargo"></div>
+                        <div class="local"></div>
+                    </div>
+                    <div class="sobre">
+                        <h1>Sobre mim</h1>
+                        <div class="sobre-text"></div>
+                        <div class="borda"></div>
+                    </div>
+                    <div class="experencias-text">
+                        <h1>Experiência</h1>
+                        <div class="empresa"></div>
+                        <div class="cargo-empresa"></div>
+                        <div class="borda"></div>
+                    </div>
+                    <div class="formacao">
+                        <h1>Formação acadêmica</h1>
+                        <div class="instituto"></div>
+                        <div > 
+                            <span class="descricao-form"></span>
+                            ·(<span class="data"></span>)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-baixar">Baixar CV</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
